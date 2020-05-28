@@ -22,6 +22,9 @@ window.Vue = vue;
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('query-message', require('./components/base/QueryMessage.vue').default);
+Vue.component('list-kind-component', require('./components/ListKind.vue').default);
+Vue.component('post-kind-element', require('./components/PostKindElements.vue').default);
+Vue.component('update-kind-element', require('./components/UpdateKindElement.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

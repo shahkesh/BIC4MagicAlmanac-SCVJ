@@ -32,7 +32,7 @@ All views can be found in ```/resources/views```.
 
 #### VueJS
 
-Implement your [VueJS](https://vue.js) components in the folder ```/resources/views/js/components```.
+Implement your [VueJS](https://vuejs.org) components in the folder ```/resources/views/js/components```.
 Register your components in ```/resources/views/js/app.js``` and use them in the following files:
 
  * ```/resources/views/kind```
