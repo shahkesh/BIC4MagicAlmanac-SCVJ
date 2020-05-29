@@ -45,12 +45,12 @@
                     name: this.name,
                     description: this.description
                 })
-                    .then(function (response) {
-                        currentObj.output = response.data;
-                    })
-                    .catch(function (error) {
-                        currentObj.output = error;
-                    });
+                .then(function (response) {
+                    currentObj.output = response.data;
+                })
+                .catch(function (error) {
+                    currentObj.output = error;
+                });
             }
         }
     }

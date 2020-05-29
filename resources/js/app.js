@@ -25,6 +25,7 @@ Vue.component('query-message', require('./components/base/QueryMessage.vue').def
 Vue.component('list-kind-component', require('./components/ListKind.vue').default);
 Vue.component('post-kind-element', require('./components/PostKindElements.vue').default);
 Vue.component('update-kind-element', require('./components/UpdateKindElement.vue').default);
+Vue.component('list-spell-component', require('./components/ListSpell.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
