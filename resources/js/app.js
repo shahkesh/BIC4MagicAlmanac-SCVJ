@@ -26,6 +26,7 @@ Vue.component('list-kind-component', require('./components/ListKind.vue').defaul
 Vue.component('post-kind-element', require('./components/PostKindElements.vue').default);
 Vue.component('update-kind-element', require('./components/UpdateKindElement.vue').default);
 Vue.component('list-spell-component', require('./components/ListSpell.vue').default);
+Vue.component('create-spell-component', require('./components/CreateSpell.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
