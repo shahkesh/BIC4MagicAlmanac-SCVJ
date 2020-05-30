@@ -23,6 +23,8 @@ window.Vue = vue;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('query-message', require('./components/base/QueryMessage.vue').default);
 Vue.component('update-kind-element', require('./components/UpdateKindElement.vue').default);
+Vue.component('list-spell-component', require('./components/ListSpell.vue').default);
+Vue.component('create-spell-component', require('./components/CreateSpell.vue').default);
 
 Vue.component('edit-kind-element', require('./components/EditKind.vue').default);
 Vue.component('show-kind-element', require('./components/ShowKind.vue').default);
