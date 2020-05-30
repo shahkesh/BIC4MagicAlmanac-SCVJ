@@ -15,14 +15,18 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
+                                <th>Quote</th>
                                 <th>Description</th>
+                                <th>Kind_ID</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr v-for="kind in kinds " @dblclick="showKind(kind)">
-                                <td>{{kind.id}}</td>
-                                <td>{{kind.name}}</td>
-                                <td>{{kind.description}}</td>
+                            <tr v-for="spell in spells " @dblclick="showSpell(spell)">
+                                <td>{{spell.id}}</td>
+                                <td>{{spell.name}}</td>
+                                <td>{{spell.quote}}</td>
+                                <td>{{spell.description}}</td>
+                                <td>{{spell.kind_id}}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -37,19 +41,19 @@
     export default {
         data() {
             return {
-                kinds: []
+                spells: []
             }
         },
         methods: {
-            showKind(kind){
-                window.location.href = '/kind/' + kind.slug;
+            showSpell(spell){
+                window.location.href = '/spell/' + spell.slug;
             }
         },
         created() {
-            axios.get('/list/kind')
-            .then(response => {
-                this.kinds = response.data})
-            .catch(error =>
+            axios.get('/list/spell')
+                .then(response => {
+                    this.spells = response.data})
+                .catch(error =>
                 {console.log(error.data, error.status)});
         }
     }

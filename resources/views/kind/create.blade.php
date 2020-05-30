@@ -3,9 +3,6 @@
 
 @section('content')
     <section class="section">
-        <div class="container">
-            <h1>Create kind</h1>
-            <post-kind-element></post-kind-element>
-        </div>
+        <post-kind-element title="Create kind"/>
     </section>
 @endsection
