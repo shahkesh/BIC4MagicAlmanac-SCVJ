@@ -3,8 +3,6 @@
 
 @section('content')
     <section class="section">
-        <div class="container">
-            <h1>Show kind</h1>
-        </div>
+        <show-kind-element title="Show kind"/>
     </section>
 @endsection

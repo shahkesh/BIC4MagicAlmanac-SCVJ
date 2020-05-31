@@ -3,8 +3,6 @@
 
 @section('content')
     <section class="section">
-        <div class="container">
-            <h1>Create spell</h1>
-        </div>
+        <post-spell-element title="Create spell"/>
     </section>
 @endsection
